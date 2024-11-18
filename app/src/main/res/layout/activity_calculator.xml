@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:backgroundTint="#FEF7FF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="64dp"
+        android:src="@android:drawable/ic_dialog_dialer"/>
+
+    <EditText
+        android:id="@+id/elsoSzamEditText"
+        android:layout_marginTop="64dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Első szám"/>
+    <EditText
+        android:id="@+id/masodikSzamEditText"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/edit_text"
+        android:hint="Második szám"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/osszeadasButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Összeadás"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/torlesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Törlés"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/eredmenyTextView"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/eredmeny"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+</LinearLayout>
