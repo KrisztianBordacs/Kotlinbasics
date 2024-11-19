@@ -40,11 +40,9 @@ class CalculatorActivity : AppCompatActivity() {
             val elsoSzam = elsoSzamEditText.text.toString()
             val masodikSzam = masodikSzamEditText.text.toString()
             if(elsoSzam.isNotBlank() && elsoSzam.isNotEmpty() || masodikSzam.isNotBlank() && masodikSzam.isNotEmpty()){
-                var eredmeny = elsoSzam.toInt() + masodikSzam.toInt()
+                //var eredmeny = elsoSzam.toInt() + masodikSzam.toInt()
+                eredmenyTextView.text = "Eredmeny=  " + szum(elsoSzam.toInt(),masodikSzam.toInt())
 
-                eredmenyTextView.text = "Eredmény: $eredmeny"
-                elsoSzamEditText.setText("")
-                masodikSzamEditText.setText("")
                 hideKeyboard()
             }else{
                 Toast.makeText(this, "Kérlek tölts ki minden mezőt!", Toast.LENGTH_SHORT).show()
@@ -62,5 +60,8 @@ class CalculatorActivity : AppCompatActivity() {
         val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(elsoSzamEditText.windowToken, 0)
         imm.hideSoftInputFromWindow(masodikSzamEditText.windowToken,0)
+    }
+    private fun szum(a: Int, b: Int): Int {
+        return a+b
     }
 }
