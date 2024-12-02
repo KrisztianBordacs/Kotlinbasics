@@ -38,6 +38,8 @@ class WeatherActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        //UI Elemek inicializálása
         temperatureTextView = findViewById(R.id.temperatureTextView)
         cityTextView = findViewById(R.id.cityTextView)
         cityEditText = findViewById(R.id.cityEditText)
