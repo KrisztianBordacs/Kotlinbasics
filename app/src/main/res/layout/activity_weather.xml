@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:background="@android:drawable/edit_text"
-        android:hint="Add meg a neved"
+        android:hint="Város neve"
         android:inputType="text"
         android:padding="12dp"
         style="@style/EditTextStyle"
