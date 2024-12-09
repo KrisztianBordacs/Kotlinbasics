@@ -3,8 +3,8 @@
     android:id="@+id/greeting"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    android:backgroundTint="#FEF7FF"
+    android:padding="16dp"
+    style="@style/Base.Theme.Kotlinbasics2"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
@@ -23,6 +23,7 @@
         android:background="@android:drawable/edit_text"
         android:hint="Add meg a neved"
         android:inputType="textPersonName"
+        style="@style/EditTextStyle"
         android:padding="12dp" />
 
     <Button
@@ -31,7 +32,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:padding="12dp"
-        android:text="Köszönts!" />
+        android:text="Köszönts!"
+        style="@style/ButtonStyle"/>
 
     <TextView
         android:id="@+id/resultTextView"

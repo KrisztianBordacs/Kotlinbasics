@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
+    style="@style/Base.Theme.Kotlinbasics2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    android:backgroundTint="#FEF7FF"
+    android:padding="16dp"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:text="Üdvözlés megnyitása"
         android:textSize="20sp"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        style="@style/ButtonStyle"/>
     <Button
         android:id="@+id/toCalculatorButton"
         android:layout_width="match_parent"
@@ -22,14 +23,16 @@
         android:text="Szamólógép megnyitása"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        style="@style/ButtonStyle"/>
     <Button
         android:id="@+id/toWeatherButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Időjárás megnyitása"
         android:layout_marginTop="8dp"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        style="@style/ButtonStyle"/>
 
 
 </LinearLayout>

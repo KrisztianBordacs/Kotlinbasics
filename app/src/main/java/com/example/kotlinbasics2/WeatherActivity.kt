@@ -27,6 +27,8 @@ class WeatherActivity : AppCompatActivity() {
     private lateinit var temperatureTextView: TextView
     private lateinit var cityEditText: EditText
     private lateinit var searchButton: Button
+    private lateinit var humidityTextView: TextView
+    private lateinit var windTextView: TextView
     private val apiKey = "8adf00444f23a8acb998eb856aa05b0e"
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,6 +46,9 @@ class WeatherActivity : AppCompatActivity() {
         cityTextView = findViewById(R.id.cityTextView)
         cityEditText = findViewById(R.id.cityEditText)
         searchButton = findViewById(R.id.searchButton)
+        humidityTextView = findViewById(R.id.humidityTextView)
+        windTextView = findViewById(R.id.windTextView)
+
 
         searchButton.setOnClickListener() {
             if (cityEditText.text.isNotEmpty() || cityEditText.text.isNotBlank()) {
@@ -53,8 +58,11 @@ class WeatherActivity : AppCompatActivity() {
                 searchButton.visibility = View.INVISIBLE
                 cityTextView.visibility = View.VISIBLE
                 temperatureTextView.visibility = View.VISIBLE
+                humidityTextView.visibility = View.VISIBLE
+                windTextView.visibility = View.VISIBLE
 
                 cityEditText.setText("")
+                hideKeyboard()
             }
         }
 
@@ -76,8 +84,13 @@ class WeatherActivity : AppCompatActivity() {
                 if (response.isSuccessful){
                     val weatherResponse = response.body()
                     if(weatherResponse != null){
-                        val weatherInfo = weatherResponse.main.temp
-                        temperatureTextView.text = weatherInfo.toString()
+                        val weatherTemp = weatherResponse.main.temp
+                        val weatherTempFeel = weatherResponse.main.feels_like
+                        val weatherHumidity = weatherResponse.main.humidity
+                        val weatherWindSpeed = weatherResponse.wind.speed
+                        temperatureTextView.text = "Hőmérséklet: " + weatherTemp.toString() + "°C\n Érzet: " + weatherTempFeel.toString() + "°C"
+                        humidityTextView.text = "Páratartalom: " + weatherHumidity.toString()
+                        windTextView.text = "Szél sebesség: " + weatherWindSpeed.toString() + " km/h"
                     }
                 }
             }
@@ -87,6 +100,10 @@ class WeatherActivity : AppCompatActivity() {
             }
 
         })
+    }
+    private fun hideKeyboard() {
+        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(cityEditText.windowToken, 0)
     }
 
 }

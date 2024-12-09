@@ -3,8 +3,8 @@
     android:id="@+id/calculator"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    android:backgroundTint="#FEF7FF"
+    android:padding="16dp"
+    style="@style/Base.Theme.Kotlinbasics2"
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
@@ -20,14 +20,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:drawable/edit_text"
-        android:hint="Első szám"/>
+        android:hint="Első szám"
+        style="@style/EditTextStyle"/>
     <EditText
         android:id="@+id/masodikSzamEditText"
         android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:drawable/edit_text"
-        android:hint="Második szám"/>
+        android:hint="Második szám"
+        style="@style/EditTextStyle"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,14 +41,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Összeadás"
-            android:layout_marginEnd="4dp"/>
+            android:layout_marginEnd="4dp"
+            style="@style/ButtonStyle"/>
 
         <Button
             android:id="@+id/torlesButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Törlés"
-            android:layout_marginStart="4dp"/>
+            android:layout_marginStart="4dp"
+            style="@style/ButtonStyle"/>
     </LinearLayout>
     <TextView
         android:id="@+id/eredmenyTextView"
