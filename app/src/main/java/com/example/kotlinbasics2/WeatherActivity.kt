@@ -12,10 +12,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.transition.Visibility
 import com.example.kotlinbasics2.model.WeatherResponse
 import com.example.kotlinbasics2.network.WeatherService
-import com.google.gson.Gson
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -30,6 +28,11 @@ class WeatherActivity : AppCompatActivity() {
     private lateinit var humidityTextView: TextView
     private lateinit var windTextView: TextView
     private val apiKey = "8adf00444f23a8acb998eb856aa05b0e"
+
+    private var temperatureString = ""
+    private var feelString = ""
+    private var humidityString = ""
+    private var windSpeedString = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -88,9 +91,13 @@ class WeatherActivity : AppCompatActivity() {
                         val weatherTempFeel = weatherResponse.main.feels_like
                         val weatherHumidity = weatherResponse.main.humidity
                         val weatherWindSpeed = weatherResponse.wind.speed
-                        temperatureTextView.text = "Hőmérséklet: " + weatherTemp.toString() + "°C\n Érzet: " + weatherTempFeel.toString() + "°C"
-                        humidityTextView.text = "Páratartalom: " + weatherHumidity.toString()
-                        windTextView.text = "Szél sebesség: " + weatherWindSpeed.toString() + " km/h"
+                        temperatureString = resources.getString(R.string.temperature)
+                        feelString = resources.getString(R.string.feel)
+                        humidityString = resources.getString(R.string.humidity)
+                        windSpeedString = resources.getString(R.string.wind_speed)
+                        temperatureTextView.text = "$temperatureString: " + weatherTemp.toString() + "°C\n $feelString: " + weatherTempFeel.toString() + "°C"
+                        humidityTextView.text = "$humidityString: " + weatherHumidity.toString()
+                        windTextView.text = "$windSpeedString: " + weatherWindSpeed.toString() + " km/h"
                     }
                 }
             }

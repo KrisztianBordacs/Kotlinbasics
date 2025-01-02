@@ -12,7 +12,7 @@
         android:id="@+id/toGreetingButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Üdvözlés megnyitása"
+        android:text="@string/greetingButton"
         android:textSize="20sp"
         android:layout_marginBottom="8dp"
         style="@style/ButtonStyle"/>
@@ -20,7 +20,7 @@
         android:id="@+id/toCalculatorButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Számológép megnyitása"
+        android:text="@string/calclatorButton"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:textSize="20sp"
@@ -29,7 +29,7 @@
         android:id="@+id/toWeatherButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Időjárás megnyitása"
+        android:text="@string/weatherButton"
         android:layout_marginTop="8dp"
         android:textSize="20sp"
         style="@style/ButtonStyle"/>

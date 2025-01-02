@@ -1,7 +1,6 @@
 package com.example.kotlinbasics2
 
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
@@ -33,21 +32,25 @@ class GreetingActivity : AppCompatActivity() {
         nameEditText = findViewById(R.id.nameEditText)
         greetingButton = findViewById(R.id.greetingButton)
         resultTextView = findViewById(R.id.resultTextView)
+        var welcomeString = resources.getString(R.string.welcome)
+        var shortString = resources.getString(R.string.shortName)
+        var longString = resources.getString(R.string.longName)
+        var toastText = resources.getString(R.string.toastText2)
 
         greetingButton.setOnClickListener() {
             val name = nameEditText.text
             if (name.isNotEmpty() && name.isNotBlank()) {
                 val greetingText = when {
-                    name.length <= 3 -> "Üdv $name, de rövid neved van!"
-                    name.length >= 10 -> "Üdv $name, de hosszú neved van!"
-                    else -> "Üdv $name!"
+                    name.length <= 3 -> "$welcomeString $name, $shortString!"
+                    name.length >= 10 -> "$welcomeString $name, $longString!"
+                    else -> "$welcomeString $name!"
                 }
                 resultTextView.text = greetingText
                 nameEditText.setText("")
                 hideKeyboard()
             } else {
                 //hibaüzenet, ha üres a név
-                Toast.makeText(this, "Kérlek add meg a neved!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "$toastText!", Toast.LENGTH_SHORT).show()
                 //resultTextView.setText("Tölts ki minden mezőt!")
             }
         }

@@ -21,7 +21,6 @@
         android:id="@+id/cityTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tatabánya"
         android:textAlignment="center"
         android:textSize="30sp"
         android:visibility="invisible"/>
@@ -32,7 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:background="@android:drawable/edit_text"
-        android:hint="Város neve"
+        android:hint="@string/cityName"
         android:inputType="text"
         android:padding="12dp"
         style="@style/EditTextStyle"
@@ -43,7 +42,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="-33 °C"
         android:textAlignment="center"
         android:textSize="30sp"
         android:visibility="gone"/>
@@ -52,7 +50,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="-33 °C"
         android:textAlignment="center"
         android:textSize="30sp"
         android:visibility="gone"/>
@@ -61,7 +58,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="-33 °C"
         android:textAlignment="center"
         android:textSize="30sp"
         android:visibility="gone"/>
@@ -71,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:padding="12dp"
-        android:text="Keresés"
+        android:text="@string/search"
         android:layout_gravity="center"
         style="@style/ButtonStyle"/>
 

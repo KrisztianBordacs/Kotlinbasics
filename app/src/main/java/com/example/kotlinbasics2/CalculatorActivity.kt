@@ -35,23 +35,25 @@ class CalculatorActivity : AppCompatActivity() {
         osszeadasButton = findViewById(R.id.osszeadasButton)
         torlesButton = findViewById(R.id.torlesButton)
         eredmenyTextView = findViewById(R.id.eredmenyTextView)
+        val resultString = resources.getString(R.string.eredmeny)
+        val toastText = resources.getString(R.string.toastText)
 
         osszeadasButton.setOnClickListener() {
             val elsoSzam = elsoSzamEditText.text.toString()
             val masodikSzam = masodikSzamEditText.text.toString()
             if(elsoSzam.isNotBlank() && elsoSzam.isNotEmpty() || masodikSzam.isNotBlank() && masodikSzam.isNotEmpty()){
                 //var eredmeny = elsoSzam.toInt() + masodikSzam.toInt()
-                eredmenyTextView.text = "Eredmeny=  " + szum(elsoSzam.toInt(),masodikSzam.toInt())
+                eredmenyTextView.text = "$resultString  " + szum(elsoSzam.toInt(),masodikSzam.toInt())
 
                 hideKeyboard()
             }else{
-                Toast.makeText(this, "Kérlek tölts ki minden mezőt!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show()
             }
         }
         torlesButton.setOnClickListener() {
             elsoSzamEditText.setText("")
             masodikSzamEditText.setText("")
-            eredmenyTextView.text = "Eredmeny: -"
+            eredmenyTextView.text = "$resultString"
         }
 
 

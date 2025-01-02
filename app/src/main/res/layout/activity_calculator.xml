@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:drawable/edit_text"
-        android:hint="Első szám"
+        android:hint="@string/firstNum"
         style="@style/EditTextStyle"/>
     <EditText
         android:id="@+id/masodikSzamEditText"
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:drawable/edit_text"
-        android:hint="Második szám"
+        android:hint="@string/secNum"
         style="@style/EditTextStyle"/>
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
             android:id="@+id/osszeadasButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Összeadás"
+            android:text="@string/szum"
             android:layout_marginEnd="4dp"
             style="@style/ButtonStyle"/>
 
@@ -48,7 +48,7 @@
             android:id="@+id/torlesButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Törlés"
+            android:text="@string/delete"
             android:layout_marginStart="4dp"
             style="@style/ButtonStyle"/>
     </LinearLayout>

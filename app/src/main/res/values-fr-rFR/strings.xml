@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kotlinbasics2</string>
+    <string name="eredmeny">Résultat:-</string>
+    <string name="greetingButton">Ouvrir la salutation</string>
+    <string name="calclatorButton">Ouvrir la calculatrice</string>
+    <string name="weatherButton">Ouvrir la météo</string>
+    <string name="nameHint">Donne-moi ton nom</string>
+    <string name="search">Recherche</string>
+    <string name="greeting">Bonjour!</string>
+    <string name="delete">Supprimer</string>
+    <string name="szum">Addition</string>
+    <string name="firstNum">Premier nombre</string>
+    <string name="secNum">Deuxième nombre</string>
+    <string name="cityName">Nom de la ville</string>
+    <string name="toastText">Veuillez remplir tous les champs</string>
+    <string name="welcome">Salut</string>
+    <string name="shortName">Mais tu as un nom court</string>
+    <string name="longName">Mais tu as un long nom</string>
+    <string name="toastText2">Veuillez taper votre nom</string>
+    <string name="temperature">Température</string>
+    <string name="feel">Ressenti</string>
+    <string name="humidity">Humidité</string>
+    <string name="wind_speed">Vitesse du vent</string>
+</resources>
