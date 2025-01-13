@@ -14,7 +14,7 @@
     <string name="cityName">Város neve</string>
     <string name="toastText">Kérlek tölts ki minden mezőt</string>
     <string name="welcome">Üdv</string>
-    <string name="shortName">de rövid neved van\n de</string>
+    <string name="shortName">de rövid neved van de</string>
     <string name="longName">de hosszú neved van</string>
     <string name="toastText2">Kérlek add meg a neved</string>
     <string name="temperature">Homérséklet</string>
