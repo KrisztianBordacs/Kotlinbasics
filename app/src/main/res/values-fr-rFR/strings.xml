@@ -22,4 +22,8 @@
     <string name="feel">Ressenti</string>
     <string name="humidity">Humidité</string>
     <string name="wind_speed">Vitesse du vent</string>
+    <string name="usersListText">Liste des utilisateurs</string>
+    <string name="examleEmail">email@exemple.com</string>
+    <string name="name">Nom</string>
+    <string name="userListButton">Ouvrir liste des utilisateurs</string>
 </resources>

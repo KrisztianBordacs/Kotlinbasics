@@ -22,4 +22,8 @@
     <string name="feel">Feel</string>
     <string name="humidity">Humidity</string>
     <string name="wind_speed">Wind speed</string>
+    <string name="usersListText">Users list</string>
+    <string name="examleEmail">email@example.com</string>
+    <string name="name">Name</string>
+    <string name="userListButton">Open users list</string>
 </resources>

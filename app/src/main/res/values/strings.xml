@@ -21,4 +21,9 @@
     <string name="feel">Érzet</string>
     <string name="humidity">Páratartalom</string>
     <string name="wind_speed">Szél sebesség</string>
+    <string name="testText" translatable="false">TesztText</string>
+    <string name="usersListText">Felhasználok listája</string>
+    <string name="examleEmail">email@pelda.com</string>
+    <string name="name">Név</string>
+    <string name="userListButton">Felhasználok listája</string>
 </resources>

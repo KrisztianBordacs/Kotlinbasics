@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var toGreetingButton: Button;
     private lateinit var toCalculatorButton: Button;
     private lateinit var toWeatherButton: Button
+    private lateinit var toUserListButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         toGreetingButton = findViewById(R.id.toGreetingButton)
         toCalculatorButton = findViewById(R.id.toCalculatorButton)
         toWeatherButton = findViewById(R.id.toWeatherButton)
+        toUserListButton = findViewById(R.id.toUserListButton)
 
 
         toGreetingButton.setOnClickListener() {
@@ -40,6 +42,10 @@ class MainActivity : AppCompatActivity() {
         }
         toWeatherButton.setOnClickListener() {
             val intent = Intent(this,WeatherActivity::class.java)
+            startActivity(intent)
+        }
+        toUserListButton.setOnClickListener() {
+            val intent = Intent(this,UserListActivity::class.java)
             startActivity(intent)
         }
     }// ON CREATE

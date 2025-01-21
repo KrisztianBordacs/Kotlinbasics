@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Kotlinbasics2"
         tools:targetApi="34">
         <activity
+            android:name=".UserListActivity"
+            android:exported="false" />
+        <activity
             android:name=".WeatherActivity"
             android:exported="false" />
         <activity
