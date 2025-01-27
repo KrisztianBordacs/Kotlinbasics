@@ -1,6 +1,5 @@
 package com.example.kotlinbasics2.adapter
 
-import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlinbasics2.R
 import com.example.kotlinbasics2.model.RUser
-import com.example.kotlinbasics2.model.RandomUserResponse
 
 class RandomUserAdapter(private val randomUserList: List<RUser>) :
     RecyclerView.Adapter<RandomUserAdapter.RandomUserViewHolder>()

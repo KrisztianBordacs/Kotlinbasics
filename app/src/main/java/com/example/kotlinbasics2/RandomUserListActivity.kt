@@ -9,7 +9,6 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlinbasics2.adapter.RandomUserAdapter
-import com.example.kotlinbasics2.adapter.UserAdapter
 import com.example.kotlinbasics2.model.RandomUserResponse
 import com.example.kotlinbasics2.network.RandomUserService
 import retrofit2.Call
