@@ -6,11 +6,12 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.kotlinbasics2.adapter.RandomUserAdapter
+import com.example.kotlinbasics2.adapter.UserAdapter
 import com.example.kotlinbasics2.model.RandomUserResponse
-import com.example.kotlinbasics2.model.WeatherResponse
 import com.example.kotlinbasics2.network.RandomUserService
-import com.example.kotlinbasics2.network.WeatherService
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -19,6 +20,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 
 class RandomUserListActivity : AppCompatActivity() {
+
+    private lateinit var recyclerView: RecyclerView
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -29,8 +34,8 @@ class RandomUserListActivity : AppCompatActivity() {
             insets
         }
 
-        val recyclerView: RecyclerView = findViewById(R.id.randomUserListRecyclerView)
-
+        recyclerView = findViewById(R.id.randomUserListRecyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(this)
         fetchRandomUserList()
     }
         private fun fetchRandomUserList() {
@@ -50,6 +55,7 @@ class RandomUserListActivity : AppCompatActivity() {
                        val user: RandomUserResponse? = response.body()
                         if(user != null){
                             Log.e("Eredmény", user.results.toString())
+                            recyclerView.adapter = RandomUserAdapter(user.results)
                         }
                     }
                 }
