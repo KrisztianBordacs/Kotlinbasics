@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kotlinbasics2</string>
+    <string name="eredmeny">Eredmény:-</string>
+    <string name="greetingButton">Üdvözlés megnyitása</string>
+    <string name="calclatorButton">Számológép megnyitása</string>
+    <string name="weatherButton">Időjárás megnyitása</string>
+    <string name="nameHint">Add meg a neved</string>
+    <string name="search">Keresés</string>
+    <string name="greeting">Köszönts!</string>
+    <string name="delete">Törlés</string>
+    <string name="szum">Összeadás</string>
+    <string name="firstNum">Első szám</string>
+    <string name="secNum">Második szám</string>
+    <string name="cityName">Város neve</string>
+    <string name="toastText">Kérlek tölts ki minden mezőt</string>
+    <string name="welcome">Üdv</string>
+    <string name="shortName">de rövid neved van de</string>
+    <string name="longName">de hosszú neved van</string>
+    <string name="toastText2">Kérlek add meg a neved</string>
+    <string name="temperature">Homérséklet</string>
+    <string name="feel">Érzet</string>
+    <string name="humidity">Páratartalom</string>
+    <string name="wind_speed">Szél sebesség</string>
+    <string name="usersListText">Felhasználok listája</string>
+    <string name="examleEmail">email@pelda.com</string>
+    <string name="name">Név</string>
+    <string name="userListButton">Felhasználok listája</string>
+</resources>

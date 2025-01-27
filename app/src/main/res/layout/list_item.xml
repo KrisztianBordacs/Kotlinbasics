@@ -32,7 +32,6 @@
             android:text="@string/name"
             android:textStyle="bold"
             android:textSize="18sp"
-            android:textColor="@color/black"
             style="@style/ListItem"/>
         <TextView
             style="@style/ListItem"

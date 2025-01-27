@@ -7,6 +7,8 @@
     <color name="lightestblue">#6DBCDB</color>
     <color name="darkestblue">#05547C</color>
     <color name="gray">#524F4F</color>
-    <color name="light_gray">#AAAAAA</color>
+    <color name="light_gray">#BDBDBD</color>
+    <color name="verydarkbg">#051923</color>
+    <color name="verylightbg">#CDD9E1</color>
 
 </resources>

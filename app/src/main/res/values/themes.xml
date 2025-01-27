@@ -18,10 +18,11 @@
         <item name="backgroundTint">@color/lightbg</item>
     </style>
     <style name="ListBg">
-        <item name="android:background">@color/darkbg</item>
+        <item name="android:background">@color/verylightbg</item>
     </style>
     <style name="ListItem">
-        <item name="android:background">@color/darkbg</item>
+        <item name="android:background">@color/verylightbg</item>
+        <item name="android:textColor">@color/black</item>
     </style>
     <style name="ListEmail">
         <item name="android:textColor">@color/light_gray</item>
