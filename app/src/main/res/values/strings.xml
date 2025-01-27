@@ -1,29 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Kotlinbasics2</string>
-    <string name="eredmeny">Eredmény:-</string>
-    <string name="greetingButton">Üdvözlés megnyitása</string>
-    <string name="calclatorButton">Számológép megnyitása</string>
-    <string name="weatherButton">Időjárás megnyitása</string>
-    <string name="nameHint">Add meg a neved</string>
-    <string name="search">Keresés</string>
-    <string name="greeting">Köszönts!</string>
-    <string name="delete">Törlés</string>
-    <string name="szum">Összeadás</string>
-    <string name="firstNum">Első szám</string>
-    <string name="secNum">Második szám</string>
-    <string name="cityName">Város neve</string>
-    <string name="toastText">Kérlek tölts ki minden mezőt</string>
-    <string name="welcome">Üdv</string>
-    <string name="shortName">de rövid neved van de</string>
-    <string name="longName">de hosszú neved van</string>
-    <string name="toastText2">Kérlek add meg a neved</string>
-    <string name="temperature">Homérséklet</string>
-    <string name="feel">Érzet</string>
-    <string name="humidity">Páratartalom</string>
-    <string name="wind_speed">Szél sebesség</string>
-    <string name="testText" translatable="false">TesztText</string>
-    <string name="usersListText">Felhasználok listája</string>
-    <string name="examleEmail">email@pelda.com</string>
-    <string name="name">Név</string>
-    <string name="userListButton">Felhasználok listája</string>
+    <string name="eredmeny">Result:-</string>
+    <string name="greetingButton">Open greeting</string>
+    <string name="calclatorButton">Open calculator</string>
+    <string name="weatherButton">Open weather</string>
+    <string name="nameHint">Type your name</string>
+    <string name="search">Search</string>
+    <string name="greeting">Hello!</string>
+    <string name="delete">Delete</string>
+    <string name="szum">Addition</string>
+    <string name="firstNum">First Number</string>
+    <string name="secNum">Second Number</string>
+    <string name="cityName">City name</string>
+    <string name="toastText">Please fill all the fildes</string>
+    <string name="welcome">Welcome</string>
+    <string name="shortName">but you have a short name</string>
+    <string name="longName">but you have a long name</string>
+    <string name="toastText2">Please type your name</string>
+    <string name="temperature">Temparature</string>
+    <string name="feel">Feel</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind speed</string>
+    <string name="usersListText">Users list</string>
+    <string name="examleEmail">email@example.com</string>
+    <string name="name">Name</string>
+    <string name="userListButton">Open users list</string>
 </resources>
