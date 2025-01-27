@@ -31,7 +31,8 @@ class RandomUserAdapter(private val randomUserList: List<RUser>) :
 
         override fun onBindViewHolder(holder: RandomUserViewHolder, position: Int) {
             val user = randomUserList[position]
-            holder.nameText.text = user.name.last + user.name.first
+            val name = user.name.last + user.name.first
+            holder.nameText.text = name
             holder.emailText.text = user.email
             if(user.gender == "female"){
             holder.profileImage.setImageResource(R.drawable.profile)
