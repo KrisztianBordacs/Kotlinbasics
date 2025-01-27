@@ -9,7 +9,7 @@
     android:padding="12dp">
 
     <ImageView
-        android:id="@+id/profileImage"
+        android:id="@+id/profileImageView"
         style="@style/ListItem"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -26,7 +26,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/nameText"
+            android:id="@+id/nameTextView"
             style="@style/ListItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -35,11 +35,21 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/emailText"
+            android:id="@+id/emailTextView"
             style="@style/ListItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/examleEmail"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/countryTextView"
+            style="@style/ListItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/country"
             android:textColor="@color/gray"
             android:textSize="14sp" />
 

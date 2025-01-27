@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/greeting"
+    style="@style/Base.Theme.Kotlinbasics2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    style="@style/Base.Theme.Kotlinbasics2"
     android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <ImageView
         android:layout_width="120dp"
@@ -17,23 +17,23 @@
 
     <EditText
         android:id="@+id/nameEditText"
+        style="@style/EditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:background="@android:drawable/edit_text"
         android:hint="@string/nameHint"
         android:inputType="textPersonName"
-        style="@style/EditTextStyle"
         android:padding="12dp" />
 
     <Button
         android:id="@+id/greetingButton"
+        style="@style/ButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:padding="12dp"
-        android:text="@string/greeting"
-        style="@style/ButtonStyle"/>
+        android:text="@string/greeting" />
 
     <TextView
         android:id="@+id/resultTextView"

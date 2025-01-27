@@ -26,4 +26,7 @@
     <string name="examleEmail">email@example.com</string>
     <string name="name">Name</string>
     <string name="userListButton">Open users list</string>
+    <string name="country">Country</string>
+    <string name="randomUser">Random User List</string>
+    <string name="openRuserlist">Open Random User List</string>
 </resources>

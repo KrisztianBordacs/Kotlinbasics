@@ -4,43 +4,56 @@
     style="@style/Base.Theme.Kotlinbasics2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <Button
         android:id="@+id/toGreetingButton"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/greetingButton"
-        android:textSize="20sp"
         android:layout_marginBottom="8dp"
-        style="@style/ButtonStyle"/>
+        android:text="@string/greetingButton"
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/toCalculatorButton"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/calclatorButton"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:textSize="20sp"
-        style="@style/ButtonStyle"/>
+        android:text="@string/calclatorButton"
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/toWeatherButton"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/weatherButton"
         android:layout_marginTop="8dp"
-        android:textSize="20sp"
-        style="@style/ButtonStyle"/>
+        android:layout_marginBottom="8dp"
+        android:text="@string/weatherButton"
+        android:textSize="20sp" />
+
     <Button
         android:id="@+id/toUserListButton"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/userListButton"
         android:layout_marginTop="8dp"
-        android:textSize="20sp"
-        style="@style/ButtonStyle"/>
+        android:layout_marginBottom="8dp"
+        android:text="@string/userListButton"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/toRandomUserListButton"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/openRuserlist"
+        android:textSize="20sp" />
 
 
 </LinearLayout>

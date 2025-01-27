@@ -36,7 +36,7 @@ class UserListActivity : AppCompatActivity() {
             User("Szabó Ádám", "szabo.adam@email.hu", R.drawable.user),
             User("Molnár Péter", "molnar.peter@email.hu", R.drawable.user),
         )
-            val recyclerView: RecyclerView = findViewById(R.id.userListRecyclerView)
+        val recyclerView: RecyclerView = findViewById(R.id.userListRecyclerView)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = UserAdapter(users)

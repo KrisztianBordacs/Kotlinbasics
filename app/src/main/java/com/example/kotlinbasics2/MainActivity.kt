@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 //https://api.openweathermap.org/data/2.5/weather?q=Budapest&units=metric&lang=hu&appid=8adf00444f23a8acb998eb856aa05b0e
 class MainActivity : AppCompatActivity() {
@@ -15,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var toCalculatorButton: Button;
     private lateinit var toWeatherButton: Button
     private lateinit var toUserListButton: Button
+    private lateinit var toRandomUserListButton : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,22 +29,27 @@ class MainActivity : AppCompatActivity() {
         toCalculatorButton = findViewById(R.id.toCalculatorButton)
         toWeatherButton = findViewById(R.id.toWeatherButton)
         toUserListButton = findViewById(R.id.toUserListButton)
+        toRandomUserListButton = findViewById(R.id.toRandomUserListButton)
 
 
         toGreetingButton.setOnClickListener() {
-            val intent = Intent(this,GreetingActivity::class.java)
+            val intent = Intent(this, GreetingActivity::class.java)
             startActivity(intent)
         }
         toCalculatorButton.setOnClickListener() {
-            val intent = Intent(this,CalculatorActivity::class.java)
+            val intent = Intent(this, CalculatorActivity::class.java)
             startActivity(intent)
         }
         toWeatherButton.setOnClickListener() {
-            val intent = Intent(this,WeatherActivity::class.java)
+            val intent = Intent(this, WeatherActivity::class.java)
             startActivity(intent)
         }
         toUserListButton.setOnClickListener() {
-            val intent = Intent(this,UserListActivity::class.java)
+            val intent = Intent(this, UserListActivity::class.java)
+            startActivity(intent)
+        }
+        toRandomUserListButton.setOnClickListener() {
+            val intent = Intent(this, RandomUserListActivity::class.java)
             startActivity(intent)
         }
     }// ON CREATE

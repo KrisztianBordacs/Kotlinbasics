@@ -26,4 +26,7 @@
     <string name="examleEmail">email@pelda.com</string>
     <string name="name">Név</string>
     <string name="userListButton">Felhasználok listája</string>
+    <string name="country">Ország</string>
+    <string name="randomUser">Random Felhasználok listája</string>
+    <string name="openRuserlist">Random Felhasználok listája</string>
 </resources>

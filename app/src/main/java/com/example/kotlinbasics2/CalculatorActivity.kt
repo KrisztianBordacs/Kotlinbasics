@@ -41,12 +41,13 @@ class CalculatorActivity : AppCompatActivity() {
         osszeadasButton.setOnClickListener() {
             val elsoSzam = elsoSzamEditText.text.toString()
             val masodikSzam = masodikSzamEditText.text.toString()
-            if(elsoSzam.isNotBlank() && elsoSzam.isNotEmpty() || masodikSzam.isNotBlank() && masodikSzam.isNotEmpty()){
+            if (elsoSzam.isNotBlank() && elsoSzam.isNotEmpty() || masodikSzam.isNotBlank() && masodikSzam.isNotEmpty()) {
                 //var eredmeny = elsoSzam.toInt() + masodikSzam.toInt()
-                eredmenyTextView.text = "$resultString  " + szum(elsoSzam.toInt(),masodikSzam.toInt())
+                eredmenyTextView.text =
+                    "$resultString  " + szum(elsoSzam.toInt(), masodikSzam.toInt())
 
                 hideKeyboard()
-            }else{
+            } else {
                 Toast.makeText(this, toastText, Toast.LENGTH_SHORT).show()
             }
         }
@@ -58,12 +59,14 @@ class CalculatorActivity : AppCompatActivity() {
 
 
     }
+
     private fun hideKeyboard() {
         val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(elsoSzamEditText.windowToken, 0)
-        imm.hideSoftInputFromWindow(masodikSzamEditText.windowToken,0)
+        imm.hideSoftInputFromWindow(masodikSzamEditText.windowToken, 0)
     }
+
     private fun szum(a: Int, b: Int): Int {
-        return a+b
+        return a + b
     }
 }

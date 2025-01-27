@@ -84,9 +84,9 @@ class WeatherActivity : AppCompatActivity() {
                 call: Call<WeatherResponse>,
                 response: Response<WeatherResponse>
             ) {
-                if (response.isSuccessful){
+                if (response.isSuccessful) {
                     val weatherResponse = response.body()
-                    if(weatherResponse != null){
+                    if (weatherResponse != null) {
                         val weatherTemp = weatherResponse.main.temp
                         val weatherTempFeel = weatherResponse.main.feels_like
                         val weatherHumidity = weatherResponse.main.humidity
@@ -95,9 +95,11 @@ class WeatherActivity : AppCompatActivity() {
                         feelString = resources.getString(R.string.feel)
                         humidityString = resources.getString(R.string.humidity)
                         windSpeedString = resources.getString(R.string.wind_speed)
-                        temperatureTextView.text = "$temperatureString: " + weatherTemp.toString() + "°C\n $feelString: " + weatherTempFeel.toString() + "°C"
+                        temperatureTextView.text =
+                            "$temperatureString: " + weatherTemp.toString() + "°C\n $feelString: " + weatherTempFeel.toString() + "°C"
                         humidityTextView.text = "$humidityString: " + weatherHumidity.toString()
-                        windTextView.text = "$windSpeedString: " + weatherWindSpeed.toString() + " km/h"
+                        windTextView.text =
+                            "$windSpeedString: " + weatherWindSpeed.toString() + " km/h"
                     }
                 }
             }
@@ -108,6 +110,7 @@ class WeatherActivity : AppCompatActivity() {
 
         })
     }
+
     private fun hideKeyboard() {
         val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
         imm.hideSoftInputFromWindow(cityEditText.windowToken, 0)
