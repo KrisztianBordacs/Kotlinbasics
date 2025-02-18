@@ -6,11 +6,13 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlinbasics2.adapter.RandomUserAdapter
 import com.example.kotlinbasics2.model.RandomUserResponse
 import com.example.kotlinbasics2.network.RandomUserService
+import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -35,8 +37,12 @@ class RandomUserListActivity : AppCompatActivity() {
 
         recyclerView = findViewById(R.id.randomUserListRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
-        fetchRandomUserList()
+
+        lifecycleScope.launch {
+            fetchRandomUserList()
+        }
     }
+
         private fun fetchRandomUserList() {
             val retrofit = Retrofit.Builder()
                 .baseUrl("https://randomuser.me")

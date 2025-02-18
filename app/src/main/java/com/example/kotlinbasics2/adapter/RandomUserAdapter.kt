@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.kotlinbasics2.R
 import com.example.kotlinbasics2.model.RUser
 
@@ -34,6 +35,7 @@ class RandomUserAdapter(private val randomUserList: List<RUser>) :
             val name = user.name.last + user.name.first
             holder.nameText.text = name
             holder.emailText.text = user.email
+            Glide.with(holder.itemView.context).load(user.picture.medium).placeholder(R.drawable.profile).error(R.drawable.ic_launcher_background).into(holder.profileImage)
             if(user.gender == "female"){
             holder.profileImage.setImageResource(R.drawable.profile)
             }else{
