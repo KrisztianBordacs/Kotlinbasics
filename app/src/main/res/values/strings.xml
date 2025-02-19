@@ -29,4 +29,5 @@
     <string name="country">Country</string>
     <string name="randomUser">Random User List</string>
     <string name="openRuserlist">Open Random User List</string>
+    <string name="toCount">Class size</string>
 </resources>

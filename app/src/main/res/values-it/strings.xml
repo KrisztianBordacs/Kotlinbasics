@@ -29,4 +29,5 @@
     <string name="country">Paese</string>
     <string name="randomUser">Elenco casuale di utenti</string>
     <string name="openRuserlist">Apri elenco casuale di utenti</string>
+    <string name="toCount">Dimensione della classe</string>
 </resources>

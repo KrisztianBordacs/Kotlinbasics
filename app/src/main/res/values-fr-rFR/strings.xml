@@ -29,4 +29,5 @@
     <string name="country">Pays</string>
     <string name="randomUser">Liste d\'utilisateurs aléatoire</string>
     <string name="openRuserlist">Ouvrir la liste d\'utilisateurs aléatoire</string>
+    <string name="toCount">Taille de la classe</string>
 </resources>

@@ -29,4 +29,5 @@
     <string name="country">Land</string>
     <string name="randomUser">Zufällige Benutzerliste</string>
     <string name="openRuserlist">Zufällige Benutzerliste öffnen</string>
+    <string name="toCount">Klassengröße</string>
 </resources>

@@ -39,7 +39,7 @@ class RandomUserAdapter(private val randomUserList: List<RUser>) :
             if(user.gender == "female"){
             holder.profileImage.setImageResource(R.drawable.profile)
             }else{
-             holder.profileImage.setImageResource(R.drawable.user)
+             holder.profileImage.setImageResource(R.drawable.profile)
             }
             holder.country.text = user.location.country
             //holder.profileImage.setImageURI(Uri.parse(user.picture.medium))

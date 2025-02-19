@@ -29,4 +29,5 @@
     <string name="country">Ország</string>
     <string name="randomUser">Random Felhasználok listája</string>
     <string name="openRuserlist">Random Felhasználok listája</string>
+    <string name="toCount">Osztály létszám</string>
 </resources>
