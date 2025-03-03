@@ -30,4 +30,6 @@
     <string name="randomUser">Zufällige Benutzerliste</string>
     <string name="openRuserlist">Zufällige Benutzerliste öffnen</string>
     <string name="toCount">Klassengröße</string>
+    <string name="colorList">Farbliste</string>
+    <string name="placeholder">PLACEHOLDER</string>
 </resources>

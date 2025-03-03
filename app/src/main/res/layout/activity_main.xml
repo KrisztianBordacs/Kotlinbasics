@@ -62,6 +62,14 @@
         android:layout_marginTop="8dp"
         android:text="@string/toCount"
         android:textSize="20sp" />
+    <Button
+        android:id="@+id/toColorButton"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/colorList"
+        android:textSize="20sp" />
 
 
 </LinearLayout>

@@ -30,4 +30,6 @@
     <string name="randomUser">Random Felhasználok listája</string>
     <string name="openRuserlist">Random Felhasználok listája</string>
     <string name="toCount">Osztály létszám</string>
+    <string name="colorList">Színlista</string>
+    <string name="placeholder">PLACEHOLDER</string>
 </resources>
