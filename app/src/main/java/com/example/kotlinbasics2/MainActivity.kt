@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var toRandomUserListButton : Button
     private lateinit var toCountButton: Button
     private lateinit var toColorButton: Button
+    private lateinit var toBeerButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +35,8 @@ class MainActivity : AppCompatActivity() {
         toRandomUserListButton = findViewById(R.id.toRandomUserListButton)
         toCountButton = findViewById(R.id.toCountButton)
         toColorButton = findViewById(R.id.toColorButton)
+        toBeerButton = findViewById(R.id.toBeerButton)
+
 
 
         toGreetingButton.setOnClickListener() {
@@ -62,6 +65,10 @@ class MainActivity : AppCompatActivity() {
         }
         toColorButton.setOnClickListener() {
             val intent = Intent(this, ColorListActivity::class.java)
+            startActivity(intent)
+        }
+        toBeerButton.setOnClickListener() {
+            val intent = Intent(this, BeersListActivity::class.java)
             startActivity(intent)
         }
     }// ON CREATE
