@@ -10,6 +10,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.kotlinbasics2.adapter.BeersAdapter
+import com.example.kotlinbasics2.model.Beer
 import com.example.kotlinbasics2.model.BeersResponse
 import com.example.kotlinbasics2.network.BeersService
 import kotlinx.coroutines.launch
@@ -49,18 +50,18 @@ class BeersListActivity : AppCompatActivity() {
 
         val beerService = retrofit.create(BeersService::class.java)
         val call = beerService.getBeers()
-        call.enqueue(object : Callback<BeersResponse> {
-            override fun onResponse(call: Call<BeersResponse>, response: Response<BeersResponse>) {
+        call.enqueue(object : Callback<List<Beer>> {
+            override fun onResponse(call: Call<List<Beer>>, response: Response<List<Beer>>) {
                 if (response.isSuccessful) {
-                    val beersResponse: BeersResponse? = response.body()
+                    val beersResponse: List<Beer>? = response.body()
                     if (beersResponse != null) {
-                        Log.e("Eredmény", beersResponse.beers.toString())
-                        recyclerView.adapter = BeersAdapter(beersResponse.beers)
+                        Log.e("Eredmény", beersResponse.toString())
+                        recyclerView.adapter = BeersAdapter(beersResponse)
                     }
                 }
             }
 
-            override fun onFailure(call: Call<BeersResponse>, t: Throwable) {
+            override fun onFailure(call: Call<List<Beer>>, t: Throwable) {
                 Log.e("Hiba", "${t.message}")
                 Log.e("HIBA", "Hiba az API kérés során.")
             }

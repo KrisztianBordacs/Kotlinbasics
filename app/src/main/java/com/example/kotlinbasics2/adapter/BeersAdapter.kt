@@ -13,7 +13,7 @@ class BeersAdapter(private val beerList: List<Beer>) :
     RecyclerView.Adapter<BeersAdapter.BeerListViewHolder>()
 {
     class BeerListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val beerNameTextView: TextView = itemView.findViewById(R.id.nameTextView)
+        val beerNameTextView: TextView = itemView.findViewById(R.id.beerNameText)
         val beerDescriptionText: TextView = itemView.findViewById(R.id.beerDescriptionText)
         val contributedByTextView: TextView = itemView.findViewById(R.id.beerContributedByText)
     }
