@@ -33,7 +33,7 @@ class ColorAdapter(private val colorList: List<Data>) :
 
     override fun onBindViewHolder(holder: ColorListViewHolder, position: Int) {
         val colorItem = colorList[position]
-        holder.colorText.text = colorItem.color
+        holder.colorText.text = colorItem.name
         holder.yearText.text = colorItem.year.toString()
         holder.pantoneValueText.text = colorItem.pantone_value
         try {
